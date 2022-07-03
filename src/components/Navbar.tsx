@@ -1,17 +1,17 @@
 import React from "react";
+import Brand from "./Brand";
 
-type Props = {};
+type Props = {
+  className?: string;
+};
 
 const Navbar: React.FC<Props> = props => {
   return (
-    <div className="flex items-center justify-between md:mx-10 mx-2 py-6">
+    <nav className={`flex items-center justify-between ${props.className}`}>
       {/* Brand */}
-      <div id="brand" className="w-full font-italic font-semibold text-2xl ">
-        <a
-          href="/"
-          className="hover:tracking-wider transition-[letter-spacing] duration-200 ease-in-out"
-        >
-          ShaderOX
+      <div id="brand" className="w-full">
+        <a href="/">
+          <Brand />
         </a>
       </div>
       {/* Nav Items */}
@@ -41,7 +41,7 @@ const Navbar: React.FC<Props> = props => {
           Contact Me
         </a>
       </div>
-    </div>
+    </nav>
   );
 };
 

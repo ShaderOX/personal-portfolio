@@ -6,6 +6,6 @@
 
 @layer components {
   .button {
-    @apply rounded-md bg-myyellow text-background duration-200 transition-colors ease-in-out font-medium p-2 hover:bg-transparent border-myyellow hover:text-myyellow border;
+    @apply rounded-md bg-myyellow text-background duration-300 transition-colors ease-in-out font-medium p-2 hover:bg-transparent border-myyellow hover:text-myyellow border;
   }
 }
