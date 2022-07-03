@@ -4,10 +4,11 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import Footer from "./components/Footer";
 import ProjectsSection from "./components/ProjectsSection";
+import Hamburger from "./components/icons/Hamburger";
 
 function App() {
   return (
-    <div className="bg-background text-mywhite h-100%">
+    <div className="bg-background text-mywhite">
       <Navbar className="md:mx-10 mx-2 py-6" />
       <Hr />
 

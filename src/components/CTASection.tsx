@@ -6,7 +6,7 @@ type Props = {};
 
 const CTASection: React.FC<Props> = props => {
   return (
-    <section className="h-full flex my-32 lg:w-2/5 md:w-8/12 sm:w-9/12 mx-auto px-2 items-center flex-col">
+    <section className="h-full flex xs:my-48 lg:my-56 lg:w-2/5 md:w-8/12 sm:w-9/12 mx-auto px-2 items-center flex-col">
       <span id="greeting" className="text-4xl">
         Hello!
       </span>
