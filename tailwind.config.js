@@ -15,6 +15,7 @@ module.exports = {
     colors: ({ colors }) => ({
       myyellow: "#FAC300",
       background: "#282727",
+      backgroundlight: "#545353",
       mywhite: "#F5F5F5",
       mywhitelowopacity: "rgba(245,245,245,0.63)",
       inherit: colors.inherit,

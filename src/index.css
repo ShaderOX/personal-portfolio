@@ -8,4 +8,8 @@
   .button {
     @apply rounded-md bg-myyellow text-background duration-300 transition-colors ease-in-out font-medium p-2 hover:bg-transparent border-myyellow hover:text-myyellow border;
   }
+
+  .textfield {
+    @apply text-sm rounded-md block w-full p-2.5 bg-backgroundlight border-background placeholder-gray-300 text-white;
+  }
 }
