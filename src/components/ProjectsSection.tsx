@@ -6,7 +6,7 @@ type Props = {};
 const ProjectsSection: React.FC<Props> = props => {
   return (
     <section className="mt-32 mx-auto text-center">
-      <div className="mb-8">
+      <div id="my-work" className="mb-8">
         <Heading text="My Work" />
       </div>
 
@@ -14,7 +14,7 @@ const ProjectsSection: React.FC<Props> = props => {
         Some of my proud works are below,
       </span>
 
-      <div className="grid lg:grid-cols-3 gap-4 sm:grid-cols-2 xs:grid-cols-1 mx-auto w-full place-items-center">
+      <div className="grid lg:grid-cols-3 gap-12 md:grid-cols-2 xs:grid-cols-1 mx-auto lg:w-3/4 w-11/12  place-items-center my-16">
         <div className="h-48 w-80 bg-myyellow"></div>
         <div className="h-48 w-80 bg-myyellow"></div>
         <div className="h-48 w-80 bg-myyellow"></div>

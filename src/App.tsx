@@ -1,24 +1,27 @@
-import CTASection from "./components/CTASection";
-import Hr from "./components/Hr";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
-import ProjectsSection from "./components/ProjectsSection";
-import Hamburger from "./components/icons/Hamburger";
+import Hr from "./components/Hr";
+import Contact from "./components/icons/pages/Contact";
+import Home from "./components/icons/pages/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="bg-background text-mywhite">
-      <Navbar className="md:mx-10 mx-2 py-6" />
-      <Hr />
+    <Router>
+      <div className="bg-background text-mywhite">
+        <Navbar className="md:mx-10 mx-2 py-6" />
+        <Hr />
 
-      <CTASection />
+        <Routes>
+          <Route path="/contact-me" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
 
-      <ProjectsSection />
-
-      <Hr />
-      <Footer className="md:mx-10 mx-2 py-6" />
-    </div>
+        <Hr />
+        <Footer className="md:mx-10 mx-2 py-6" />
+      </div>
+    </Router>
   );
 }
 

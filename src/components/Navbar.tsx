@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import Brand from "./Brand";
 import Hamburger from "./icons/Hamburger";
 
@@ -7,10 +8,10 @@ type Props = {
 };
 
 const navigationItems = [
-  { text: "Projects", href: "#" },
+  { text: "Projects", href: "/#my-work" },
   { text: "About Me", href: "#" },
   { text: "Résumé", href: "#" },
-  { text: "Contact Me", href: "#" },
+  { text: "Contact Me", href: "/contact-me" },
 ];
 
 const Navbar: React.FC<Props> = props => {
@@ -20,16 +21,20 @@ const Navbar: React.FC<Props> = props => {
     <nav className={`flex items-center justify-between ${props.className}`}>
       {/* Brand */}
       <div id="brand" className="w-full">
-        <a href="/">
+        <Link to="/">
           <Brand />
-        </a>
+        </Link>
       </div>
       {/* Nav Items */}
       <div className="lg:w-4/5 w-full flex items-center justify-end md:justify-around">
         {navigationItems.map(item => (
-          <a className="hidden md:inline-block" href={item.href}>
+          <Link
+            className="hidden md:inline-block hover:text-myyellow ease-in-out duration-200"
+            key={item.text}
+            to={item.href}
+          >
             {item.text}
-          </a>
+          </Link>
         ))}
         <Hamburger
           className="md:hidden inline-block z-20"
@@ -53,12 +58,13 @@ const Navbar: React.FC<Props> = props => {
         >
           <div className="flex flex-col items-center justify-around h-1/3 my-auto">
             {navigationItems.map(item => (
-              <a
+              <Link
+                key={item.text}
                 className="text-lg hover:opacity-75 duration-200 ease-in-out"
-                href={item.href}
+                to={item.href}
               >
                 {item.text}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

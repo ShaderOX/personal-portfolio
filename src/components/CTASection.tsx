@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Heading from "./Heading";
 import SocialsLinks from "./SocialsLinks";
 
@@ -23,9 +24,9 @@ const CTASection: React.FC<Props> = props => {
           <SocialsLinks />
         </div>
 
-        <a href="/contact-me" className="button md:text-base text-sm">
+        <Link to="/contact-me" className="button md:text-base text-sm">
           Get in touch
-        </a>
+        </Link>
       </div>
     </section>
   );
