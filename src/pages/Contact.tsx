@@ -1,6 +1,6 @@
 import { Field, Form, Formik } from "formik";
 import React, { FormEventHandler, useRef } from "react";
-import Heading from "../../Heading";
+import Heading from "../components/Heading";
 import * as Yup from "yup";
 import axios from "axios";
 

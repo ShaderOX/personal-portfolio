@@ -1,5 +1,4 @@
 import React from "react";
-import { Link as a } from "react-router-dom";
 import EmailIcon from "./icons/EmailIcon";
 import GitHubIcon from "./icons/GitHubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";

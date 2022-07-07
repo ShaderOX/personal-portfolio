@@ -1,6 +1,6 @@
 import React from "react";
-import CTASection from "../../CTASection";
-import ProjectsSection from "../../ProjectsSection";
+import CTASection from "../components/CTASection";
+import ProjectsSection from "../components/ProjectsSection";
 
 type Props = {};
 
