@@ -12,12 +12,12 @@ const CTASection: React.FC<Props> = props => {
         Hello!
       </span>
 
-      <div className="flex flex-col my-8">
+      <h1 className="flex flex-col my-8">
         <Heading text="Asadullah Kashif" className="md:text-6xl xs:text-5xl" />
         <span className="text-center md:text-3xl xs:text-2xl text-mywhitelowopacity my-2">
           Software Engineer
         </span>
-      </div>
+      </h1>
 
       <div className="flex justify-between items-center w-3/4 mt-4">
         <div className="flex items-center justify-between lg:w-1/3 xs:w-2/6">

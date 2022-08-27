@@ -6,6 +6,7 @@ import Hr from "./components/Hr";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import MyWork from "./pages/MyWork";
 
 function App() {
   const [isLoadingPage, setIsLoadingPage] = useState(true);
@@ -31,6 +32,7 @@ function App() {
         <Hr />
 
         <Routes>
+          <Route path="/my-work" element={<MyWork />} />
           <Route path="/contact-me" element={<Contact />} />
           <Route path="/" element={<Home />} />
         </Routes>

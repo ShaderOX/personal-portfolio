@@ -1,15 +1,14 @@
 import React from "react";
-import CTASection from "../components/CTASection";
 import ProjectsSection from "../components/ProjectsSection";
 
 type Props = {};
 
-const Home: React.FC<Props> = props => {
+const MyWork: React.FC<Props> = props => {
   return (
     <main>
-      <CTASection />
+      <ProjectsSection />
     </main>
   );
 };
 
-export default Home;
+export default MyWork;

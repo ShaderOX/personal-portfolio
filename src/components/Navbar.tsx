@@ -8,7 +8,7 @@ type Props = {
 };
 
 const navigationItems = [
-  { text: "Projects", href: "/projects" },
+  { text: "My Work", href: "/my-work" },
   { text: "About Me", href: "#" },
   { text: "Résumé", href: "#" },
   { text: "Contact Me", href: "/contact-me" },
