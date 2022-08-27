@@ -24,7 +24,10 @@ const CTASection: React.FC<Props> = props => {
           <SocialsLinks />
         </div>
 
-        <Link to="/contact-me" className="button md:text-base text-sm">
+        <Link
+          to="/contact-me"
+          className="button font-semibold md:text-base text-sm"
+        >
           Get in touch
         </Link>
       </div>
