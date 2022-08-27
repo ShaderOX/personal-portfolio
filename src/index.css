@@ -13,3 +13,7 @@
     @apply text-sm rounded-md block w-full p-2.5 bg-backgroundlight border-background placeholder-gray-300 text-white;
   }
 }
+
+body {
+  overflow-x: hidden;
+}

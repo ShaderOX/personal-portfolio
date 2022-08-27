@@ -1,13 +1,30 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import Hr from "./components/Hr";
+import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
 
 function App() {
-  return (
+  const [isLoadingPage, setIsLoadingPage] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsLoadingPage(false), 2000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+
+  return isLoadingPage ? (
+    <div className="w-screen h-screen bg-background">
+      <div className="flex items-center justify-center h-full">
+        <img src="/loading.gif" />
+      </div>
+    </div>
+  ) : (
     <Router>
       <div className="bg-background text-mywhite">
         <Navbar className="md:mx-10 mx-2 py-6" />

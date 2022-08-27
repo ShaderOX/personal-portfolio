@@ -8,7 +8,7 @@ type Props = {
 };
 
 const navigationItems = [
-  { text: "Projects", href: "/#my-work" },
+  { text: "Projects", href: "/projects" },
   { text: "About Me", href: "#" },
   { text: "Résumé", href: "#" },
   { text: "Contact Me", href: "/contact-me" },
@@ -26,7 +26,7 @@ const Navbar: React.FC<Props> = props => {
         </Link>
       </div>
       {/* Nav Items */}
-      <div className="lg:w-4/5 w-full flex items-center justify-end md:justify-around">
+      <div className="lg:w-4/5 sm:w-full flex items-center justify-end md:justify-between">
         {navigationItems.map(item => (
           <Link
             className="hidden md:inline-block hover:text-myyellow ease-in-out duration-200"
@@ -37,7 +37,7 @@ const Navbar: React.FC<Props> = props => {
           </Link>
         ))}
         <Hamburger
-          className="md:hidden inline-block z-20"
+          className="md:hidden flex z-20"
           onClick={() => {
             const hide = "translate-x-[1000px]";
             const unhide = "translate-x-0";
