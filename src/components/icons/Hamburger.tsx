@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useRef } from "react";
+import React, { useRef } from "react";
 
 type Props = {
   onClick?: Function;
@@ -6,10 +6,10 @@ type Props = {
 };
 
 const Hamburger: React.FC<Props> = props => {
-  const hamburgerRef = useRef<HTMLButtonElement>(null);
+  const hamburgerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <button
+    <div
       className={`hamburger-menu ${props.className}`}
       ref={hamburgerRef}
       onClick={() => {
@@ -18,8 +18,10 @@ const Hamburger: React.FC<Props> = props => {
         if (props.onClick !== undefined) props.onClick();
       }}
     >
-      <div className="hamburger-menu__burger"></div>
-    </button>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   );
 };
 
