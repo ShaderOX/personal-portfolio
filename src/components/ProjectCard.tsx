@@ -19,7 +19,7 @@ const ProjectCard: React.FC<Props> = ({
 
   return (
     <div
-      className="h-64 w-[30rem] bg-myyellow overflow-y-hidden relative"
+      className="h-full w-full bg-myyellow overflow-y-hidden relative"
       onMouseEnter={() => {
         setShowOverlay(true);
       }}
@@ -27,17 +27,16 @@ const ProjectCard: React.FC<Props> = ({
         setShowOverlay(false);
       }}
     >
-      <img src={imageUrl} alt={title} />
+      <img src={imageUrl} alt={title} className="h-full w-full" />
       <div
-        className={`h-64 w-[30rem] bg-black opacity-90 z-20 absolute top-0 translate-y-[${
-          showOverlay ? "0px" : "-300px"
-        }] transition-transform duration-500 ease-out`}
+        className={`h-full w-full bg-black opacity-90 z-10 absolute top-0 transition-transform duration-500 ease-out`}
+        style={{
+          transform: `translateY(${showOverlay ? "0" : "-100%"})`,
+        }}
       >
         <div className="flex flex-col items-center justify-around h-full text-mywhite mx-5">
-          <span className="text-3xl font-italic font-semibold text-myyellow">
-            {title}
-          </span>
-          <span className="font-mono text-xs">{desc}</span>
+          <span className="text-2xl font-mono text-myyellow">{title}</span>
+          <span className="text-sm md:text-base">{desc}</span>
           <div className="w-full flex items-center justify-around">
             <a href={repoUrl} className="hover:opacity-80">
               <img src="/code-icon.png" alt="repo-url" className="h-6 w-6" />
