@@ -1,21 +1,17 @@
-import React, { useRef } from "react";
+import React, { forwardRef, useRef } from "react";
 
 type Props = {
-  onClick?: Function;
+  onClick: Function;
   className?: string;
 };
 
-const Hamburger: React.FC<Props> = props => {
-  const hamburgerRef = useRef<HTMLDivElement>(null);
-
+const Hamburger = forwardRef<HTMLDivElement, Props>((props, ref) => {
   return (
     <div
       className={`hamburger-menu ${props.className}`}
-      ref={hamburgerRef}
+      ref={ref}
       onClick={() => {
-        hamburgerRef.current?.classList.toggle("open");
-
-        if (props.onClick !== undefined) props.onClick();
+        props.onClick();
       }}
     >
       <div></div>
@@ -23,6 +19,6 @@ const Hamburger: React.FC<Props> = props => {
       <div></div>
     </div>
   );
-};
+});
 
 export default Hamburger;

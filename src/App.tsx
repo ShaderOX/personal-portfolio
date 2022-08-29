@@ -4,6 +4,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Hr from "./components/Hr";
 import Navbar from "./components/Navbar";
+import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import MyWork from "./pages/MyWork";
@@ -32,6 +33,7 @@ function App() {
         <Hr />
 
         <Routes>
+          <Route path="/about-me" element={<AboutMe />} />
           <Route path="/my-work" element={<MyWork />} />
           <Route path="/contact-me" element={<Contact />} />
           <Route path="/" element={<Home />} />
