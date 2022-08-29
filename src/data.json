@@ -1,0 +1,46 @@
+{
+  "education": [
+    {
+      "title": "Bachelors in Computer Science",
+      "date": "2020 - Present",
+      "institute": "National University of Sciences and Technology, Islamabad"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "CS50x: Introduction to Computer Science",
+      "date": "November 2020",
+      "institute": "Harvard University",
+      "certificateUrl": "https://drive.google.com/file/d/1l8nnuE_cSMZRg3KPvWf2St-WhpqZuBa3/view?usp=sharing"
+    },
+    {
+      "title": "Programming Fundamentals",
+      "date": "November 2020",
+      "institute": "Duke University",
+      "certificateUrl": "https://drive.google.com/file/d/1glrIRKHL7yQO0M5ySz7lWYsBmxkhKom-/view?usp=sharing"
+    }
+  ],
+  "aboutMeIntro": "I'm Asadullah Kashif. I am a student of Computer Science from The National University of Sciences and Technology Islamabad expected to graduate in 2024",
+  "resume": "https://drive.google.com/file/d/1q5dIAouuKb6em391BdEi6KtkgxzUXXm-/view?usp=sharing",
+  "projects": [
+    {
+      "imageUrl": "https://raw.githubusercontent.com/ShaderOX/live-editor/main/assets/MainPage.gif",
+      "title": "Collaborative Code Editor",
+      "desc": "A web based editor that lets you collaborate on code, run it and see the output on the terminal screen below.",
+      "repoUrl": "https://github.com/ShaderOX/live-editor"
+    },
+    {
+      "imageUrl": "https://raw.githubusercontent.com/ShaderOX/Discord-Bot/master/images/seek.PNG",
+      "title": "Discord Music Bot",
+      "desc": "A discord music bot like Groovy, Rhythm etc. It would play music from YouTube to a discord voice channel. It could maintain a queue, repeat, skip, seek tracks etc.",
+      "repoUrl": "https://github.com/ShaderOX/Discord-Bot"
+    },
+    {
+      "imageUrl": "https://raw.githubusercontent.com/ShaderOX/nust-feedback-ext/main/images/usage/3.jpeg",
+      "title": "Chrome Extension",
+      "desc": "A Chrome Extension Live on the Chrome Store that makes filling Teacher's Review forms easier. It remembers user's preferences for later. And is currently rated 5-star",
+      "repoUrl": "https://github.com/ShaderOX/nust-feedback-ext",
+      "liveUrl": "https://chrome.google.com/webstore/detail/qalam-feedback-form-autom/fkjcihepmkgphfakckacocmnopgmpbhb"
+    }
+  ]
+}
